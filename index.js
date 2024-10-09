@@ -141,8 +141,8 @@ function content(items) {
     const newsItem = document.createElement("div");
     console.log(item);
     newsItem.innerHTML = `
-        <div class="w-full mx-auto grid grid-cols-2 gap-6 p-6 bg-white sm:grid-cols-1 sm:w-full mb-6">
-          <div class="w-full col-span-1 p-6 bg-white rounded-lg shadow-lg sm:w-full mb-6">
+        <div class="w-full mx-auto  gap-6 p-6 bg-white sm:grid-cols-1 sm:w-full mb-6">
+          <div class="w-full ">
             <div class="sm:flex sm:items-start">
               <div class="sm:w-1/3">
                 <img
@@ -186,7 +186,7 @@ function content(items) {
                     <div class="flex items-center space-x-2">
                       <span>Category: ${item.category}</span>
                     </div>
-                    <div class="flex items-center space-x-2">
+                    <div class="flex items-center space-x-2 flex-wrap">
                       <span>Source: ${item.source_name} - <a href="${item.link}" target="_blank">${item.link}</a></span>
                     </div>
                     <div class="flex items-center space-x-2">
